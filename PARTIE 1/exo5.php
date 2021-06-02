@@ -1,6 +1,6 @@
 <?php
 
-$int = "NULL";
+$int = NULL;
 echo $int;
 
 $int = 5;
