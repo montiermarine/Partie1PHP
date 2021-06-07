@@ -1,9 +1,9 @@
 <?php
 
-$isOk = "false";
-if ($isOk == "true"){
-    echo "C'est OK !";
+$isOk = true ;
+if ($isOk){
+    echo 'C\'est OK !';
 }else{
-    echo "C'est pas bon !";
-};
+    echo 'C\'est pas bon !';
+}
 ?>

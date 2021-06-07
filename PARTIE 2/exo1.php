@@ -1,10 +1,11 @@
 <?php
 
 $age = 32;
-If ($age >= 18){
-    echo "Vous êtes majeure";
-} else{
-   echo "Vous êtes mineure" ;
-};
+if ($age >= 18){
+    echo "Vous êtes majeure $age";
+}else{
+   echo 'Vous êtes mineure' ;
+}
+echo $age >= 18 ? 'Vous êtes majeure':'Vous êtes mineure';
 ?>
 

@@ -1,7 +1,7 @@
 <?php
 
-function Bonjour ( $name = "Isaac", $age = 1){
-    echo  $name." ".$age ;
+function Bonjour ( $firstname = 'Isaac', $age = 1){
+    return 'Bonjour'. $firstname.' '.'tu as'. $age.'ans' ;
 }
 Bonjour ();
 ?>

@@ -4,7 +4,7 @@ $firstNumber = 100;
 $secondNumber = 19;
 
 while ($firstNumber >= 10) {
-    echo $firstNumber*$secondNumber." ";
+    echo $firstNumber*$secondNumber.' ';
     $firstNumber -- ;
-};
+}
 ?>

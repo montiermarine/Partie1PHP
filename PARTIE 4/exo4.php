@@ -1,13 +1,18 @@
 <?php
 
-function Number ( $firstnumber = 5 , $secondNumber = 9) {
-    if ($firstnumber > $secondNumber) {
-        echo "$firstnumber est plus grand que $secondNumber" ;
-    }else if ($firstnumber < $secondNumber) {
-        echo "$firstnumber est plus petit que $secondNumber";
-    }else{
-        echo "$firstnumber est égale à $secondNumber";
-    };
+function numbersCompare($firstNumber = 12, $secondNumber = 13){
+      if (is_int($firstNumber) && is_int($secondNumber)) {
+            if ($firstNumber < $secondNumber) {
+                  $message = 'le premier nombre est plus petit.';
+            } elseif ($firstNumber == $secondNumber) {
+                  $message = 'Les deux nombres sont identiques';
+            } else if ($firstNumber > $secondNumber) {
+                  $message = 'Le premier nombre est plus grand';
+            }
+      } else {
+            $message = 'rentre un nombre connard';
+      }
+      return $message;
 }
-Number ();
+echo numbersCompare(20, 25);
 ?>
